@@ -28,7 +28,7 @@ body {
     height: 100%;
     margin: 0 auto; /*centrar todo*/
 }
-
+/*encabezado*/
 header {
     display: flex;
     flex-direction: column; /*vertical*/
