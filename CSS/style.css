@@ -54,16 +54,16 @@ h2 {
     max-width: 500px;
 }
 
-nav {
+/*nav {
     grid-area: sidebar;
     display: flex;
     align-items: center;
-}
+}*/
 
-nav ul{
+/*nav ul{
     display: flex;
     flex-wrap: wrap;
-    list-style: none; /*quita los puntos*/
+    list-style: none; 
     gap: 40px;
     padding: 30px;
     margin: 10px;
@@ -73,7 +73,7 @@ nav ul{
 li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-}
+}*/
 
 main {
     grid-area: main;
@@ -135,10 +135,10 @@ footer {
         font-size: 24px;
     }
 
-    nav ul {
+    /*nav ul {
         font-size: 18px;
         gap: 25px;
-    }
+    }*/
     .presentacion {
         gap: 40px;
         padding: 0 30px; 
@@ -170,7 +170,7 @@ footer {
         text-align: center;
         gap: 20px;
     }
-    nav ul {
+    /*nav ul {
         flex-direction: column;
         text-align: center;
         gap: 20px;
