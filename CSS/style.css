@@ -54,6 +54,18 @@ h2 {
     max-width: 500px;
 }
 
+/* Ajuste ancho navbar centrado */
+.custom-navbar {
+    width: 70%;       /* ocupa 70% de la pantalla */
+    max-width: 900px; /* opcional: limitar ancho máximo */
+}
+
+/* Links blancos y separados */
+.navbar .nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin: 0 40px;   /* separación horizontal entre links */
+}
 /*nav {
     grid-area: sidebar;
     display: flex;
