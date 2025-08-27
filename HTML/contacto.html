@@ -36,24 +36,32 @@
 </nav>
     </header>
 
-    <main>
+    <main class="container my-5">
         <section>
-        <h3>Contacto</h3>
+        <h3 class="text-center mb-4 titulo-contacto">Necesitas ayuda para entrenar, contactame</h3>
+
+        <div>
         <form action="*"method>
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" required> <!-- required para campos obligatorios -->
+          <div class="mb-3 text-center">
+        <input type="text" name="nombre" id="nombre" required class="form-control text-center" placeholder="Escribe tu Nombre"> <!-- required para campos obligatorios -->
+        </div>
 
-        <label for="Apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido" required>
+        <div class="mb-3 text-center">
+        <input type="text" name="apellido" id="apellido" required class="form-control text-center" placeholder="Escribe tu Apellido">
+      </div>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" required>
-
-        <label for="comentario">Comentario</label>
-        <textarea name="comentario" id="comentario" rows="5" required></textarea><br><br>
-
-        <button type="submit">Enviar</button>
+      <div class="mb-3 text-center">
+        <input type="text" name="email" id="email" required class="form-control text-center" placeholder="Escribe tu Email">
+        </div>
+        <div class="mb-3 text-center">
+        <textarea name="comentario" id="comentario" rows="5" required class="form-control text-center" placeholder="Puedes dejar un comentario"></textarea><br><br>
+      </div>
+      
+      <div class="text-center">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
         </form>
+        </div>
     </section>
     </main>
     
