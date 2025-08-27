@@ -1,3 +1,5 @@
+@use "./mixin";
+
 main {
     grid-area: main;
     padding: 20px;   
@@ -22,10 +24,7 @@ main {
 .textomain {
     width: 100%;
     max-width: 600px; /*cuanto ancho maximo ocupa el texto*/
-    font-size: 25px;
-    background-color: burlywood;
-    padding: 25px;
-    border-radius: 10px;
+    @include mixin.textomain;
 } /*ambos textos llevan mismas propiedades*/
 
 .lista {

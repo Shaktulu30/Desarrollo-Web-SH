@@ -1,180 +1,172 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 } /* Reset */
-
 body {
-    background-image: url('../IMAGENES/GYM.jpg'); /*codigo para imagen de fondo*/
-    background-size: cover; /*cubrir fondo*/
-    background-position: center; /*centrar*/
-    font-family: "Space Grotesk",sans-serif;
-    background-attachment: fixed;
+  background-image: url("../IMAGENES/GYM.jpg"); /*codigo para imagen de fondo*/
+  background-size: cover; /*cubrir fondo*/
+  background-position: center; /*centrar*/
+  font-family: "Space Grotesk", sans-serif;
+  background-attachment: fixed;
 }
 
 /* Grid */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "header header header header header"
-    "sidebar sidebar sidebar sidebar sidebar"
-    "main main main main main"
-    "footer footer footer footer footer";
-    column-gap: 20px;
-    row-gap: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto; /*centrar todo*/
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header header header" "sidebar sidebar sidebar sidebar sidebar" "main main main main main" "footer footer footer footer footer";
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; /*centrar todo*/
 }
-/*encabezado*/
+
 header {
-    display: flex;
-    flex-direction: column; /*vertical*/
-    align-items: center;
-    padding: 20px;
-    grid-area: header;
-    }
+  display: flex;
+  flex-direction: column; /*vertical*/
+  align-items: center;
+  padding: 20px;
+  grid-area: header;
+}
 
 h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    text-decoration: underline;
-    text-align: center;
-    margin: 20px; /*espacio entre elementos*/
-    padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+  margin: 20px; /*espacio entre elementos*/
+  padding: 10px;
 }
 
 h2 {
-    font-size: 30px;
-    text-align: center; /*posicion del texto*/
-    border: 5px solid black; /*borde*/
-    width: 100%;
-    max-width: 500px;
+  font-size: 30px;
+  text-align: center; /*posicion del texto*/
+  border: 5px solid black; /*borde*/
+  width: 100%;
+  max-width: 500px;
 }
 
 /* Ajuste ancho navbar centrado */
 .custom-navbar {
-    width: 70%;       /* ocupa 70% de la pantalla */
-    max-width: 900px; /* opcional: limitar ancho máximo */
+  width: 70%; /* ocupa 70% de la pantalla */
+  max-width: 900px; /* opcional: limitar ancho máximo */
 }
 
 /* Links blancos y separados */
 .navbar .nav-link {
-    color: white !important;
-    font-size: 18px;
-    margin: 0 40px;   /* separación horizontal entre links */
+  color: white !important;
+  font-size: 18px;
+  margin: 0 40px; /* separación horizontal entre links */
 }
 
 main {
-    grid-area: main;
-    padding: 20px;   
+  grid-area: main;
+  padding: 20px;
 }
 
 /*section*/
 .presentacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px; /*para separar elementos lo uso en el bloque*/
-    margin: 20px 0;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px; /*para separar elementos lo uso en el bloque*/
+  margin: 20px 0;
+  padding: 0 20px;
 }
 
 .img {
-    max-width: 100%;
-    width: 600px;
-    border-radius: 10px;
+  max-width: 100%;
+  width: 600px;
+  border-radius: 10px;
 }
 
 .textomain {
-    width: 100%;
-    max-width: 600px; /*cuanto ancho maximo ocupa el texto*/
-    font-size: 25px;
-    background-color: burlywood;
-    padding: 25px;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 600px; /*cuanto ancho maximo ocupa el texto*/
+  font-size: 25px;
+  background-color: burlywood;
+  padding: 25px;
+  border-radius: 10px;
 } /*ambos textos llevan mismas propiedades*/
-
 .lista {
-    margin-top: 20px;
-    padding-left: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
 }
 
 .lista li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
-    grid-area: footer;
-    display: flex;
-    align-items: center; /*los ubica horizontalmente*/
-    justify-content: center; /*ubica al medio de la pag*/
-    margin: 15px;
-    gap: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px
+  grid-area: footer;
+  display: flex;
+  align-items: center; /*los ubica horizontalmente*/
+  justify-content: center; /*ubica al medio de la pag*/
+  margin: 15px;
+  gap: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
 
 /*tablets*/
 @media (max-width: 1028px) {
-    h1{
-        font-size: 40px;
-    }
-
-    h2{
-        font-size: 24px;
-    }
-
-    /*nav ul {
-        font-size: 18px;
-        gap: 25px;
-    }*/
-    .presentacion {
-        gap: 40px;
-        padding: 0 30px; 
-    }
-    .img{
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-    }
-    .textomain {
-        font-size: 18px;
-        padding: 15px;
-    }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  /*nav ul {
+      font-size: 18px;
+      gap: 25px;
+  }*/
+  .presentacion {
+    gap: 40px;
+    padding: 0 30px;
+  }
+  .img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  .textomain {
+    font-size: 18px;
+    padding: 15px;
+  }
 }
-
 /*moviles*/
 @media (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 18px;
-        max-width: 90%;
-    }
-
-    .presentacion, .bienvenida {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    /*nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-        font-size: 16px;
-    } /*tamaño de menu*/
-    .img{
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-    }
-    .textomain {
-        font-size: 18px;
-        padding: 15px;
-    }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 18px;
+    max-width: 90%;
+  }
+  .presentacion, .bienvenida {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  /*nav ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      font-size: 16px;
+  } /*tamaño de menu*/
+  .img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  .textomain {
+    font-size: 18px;
+    padding: 15px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
