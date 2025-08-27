@@ -36,6 +36,14 @@ main {
     margin-bottom: 10px;
 }
 
+.rutina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 15px;
+}
+
 footer {
     grid-area: footer;
     display: flex;
