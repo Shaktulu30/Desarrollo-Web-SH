@@ -1,0 +1,49 @@
+main {
+    grid-area: main;
+    padding: 20px;   
+}
+
+/*section*/
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px; /*para separar elementos lo uso en el bloque*/
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.img {
+    max-width: 100%;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.textomain {
+    width: 100%;
+    max-width: 600px; /*cuanto ancho maximo ocupa el texto*/
+    font-size: 25px;
+    background-color: burlywood;
+    padding: 25px;
+    border-radius: 10px;
+} /*ambos textos llevan mismas propiedades*/
+
+.lista {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.lista li {
+    margin-bottom: 10px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center; /*los ubica horizontalmente*/
+    justify-content: center; /*ubica al medio de la pag*/
+    margin: 15px;
+    gap: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}

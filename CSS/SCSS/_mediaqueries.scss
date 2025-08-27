@@ -1,0 +1,61 @@
+/*tablets*/
+@media (max-width: 1028px) {
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    /*nav ul {
+        font-size: 18px;
+        gap: 25px;
+    }*/
+    .presentacion {
+        gap: 40px;
+        padding: 0 30px; 
+    }
+    .img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    .textomain {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/*moviles*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    .presentacion, .bienvenida {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    /*nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        font-size: 16px;
+    } /*tamaño de menu*/
+    .img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    .textomain {
+        font-size: 18px;
+        padding: 15px;
+    }
+}

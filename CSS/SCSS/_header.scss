@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    flex-direction: column; /*vertical*/
+    align-items: center;
+    padding: 20px;
+    grid-area: header;
+    }
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px; /*espacio entre elementos*/
+    padding: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center; /*posicion del texto*/
+    border: 5px solid black; /*borde*/
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Ajuste ancho navbar centrado */
+.custom-navbar {
+    width: 70%;       /* ocupa 70% de la pantalla */
+    max-width: 900px; /* opcional: limitar ancho máximo */
+}
+
+/* Links blancos y separados */
+.navbar .nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin: 0 40px;   /* separación horizontal entre links */
+}

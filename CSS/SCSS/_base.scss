@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* Reset */
+
+body {
+    background-image: url('../IMAGENES/GYM.jpg'); /*codigo para imagen de fondo*/
+    background-size: cover; /*cubrir fondo*/
+    background-position: center; /*centrar*/
+    font-family: "Space Grotesk",sans-serif;
+    background-attachment: fixed;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar sidebar sidebar sidebar sidebar"
+    "main main main main main"
+    "footer footer footer footer footer";
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; /*centrar todo*/
+}
