@@ -58,6 +58,22 @@ main {
     margin: 15px;
 }
 
+.consejos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgconsejo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px;
+}
+
 footer {
     grid-area: footer;
     display: flex;

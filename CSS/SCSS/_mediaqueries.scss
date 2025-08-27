@@ -60,6 +60,22 @@
     .rutina .img {
         width: 300px;
     }
+
+    .consejos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 15px;
+        gap: 15px;
+    }
+
+    .imgconsejo {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 150px;
+    }
+
     .img{
         width: 100%;
         max-width: 600px;
